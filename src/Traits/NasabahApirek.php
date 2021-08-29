@@ -4,7 +4,6 @@
  *@author ismarianto 
  */ 
 namespace Ismarianto\Ismarianto\Traits;
-
 use Illuminate\Http\Request;
 
 /**

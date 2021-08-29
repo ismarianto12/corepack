@@ -21,8 +21,8 @@ trait LoginActions
 
     public function index()
     {
-        // none 
-
+        // none  
+        return view('ismarianto::login');
     }
     public function DoprocessLogin()
     {

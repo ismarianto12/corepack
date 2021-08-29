@@ -93,9 +93,6 @@ trait Overide
             if ($partial->count() > 0) {
                 $partial->update([
                     'status' => 0,
-                    'users_id' => Session::get('username'),
-                    'created_at' => Carbon::now(),
-                    'created_at' => Carbon::now(),
                     'keterangan_overide' => $keterangan_overide
                 ]);
             } else {
@@ -103,9 +100,6 @@ trait Overide
                     'no_aplikasi' => $no_aplikasi,
                     'jenis' => 'peserta',
                     'status' => 0,
-                    'users_id' => Session::get('username'),
-                    'created_at' => Carbon::now(),
-                    'created_at' => Carbon::now(),
                     'keterangan_overide' => $keterangan_overide
                 ]);
             }
@@ -151,10 +145,6 @@ trait Overide
                     $partial->update([
                         'status' => 0,
                         'trpenerima_manfaat_id' => $pmanfaats->id,
-                        'created_at' => Carbon::now(),
-                        'created_at' => Carbon::now(), 
-                        'users_id' => Session::get('username'),
-
                         'keterangan_overide' => $keterangan_overide
                     ]);
                 } else {
@@ -163,10 +153,6 @@ trait Overide
                         'jenis' => 'pmanfaat',
                         'status' => 0,
                         'trpenerima_manfaat_id' => $pmanfaats->id,
-                        'created_at' => Carbon::now(),
-                        'created_at' => Carbon::now(),
-                        'users_id' => Session::get('username'),
-
                         'keterangan_overide' => $keterangan_overide
                     ]);
                 }
