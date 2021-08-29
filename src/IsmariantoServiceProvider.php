@@ -35,7 +35,6 @@ class IsmariantoServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->register(\Ismarianto\Filemanager\FileManagerServiceProvider::class);
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
         $loader->alias('Tmparamtertr', Tmparamtertr::class);
         $loader->alias('MenuApp', ModulApp::class);

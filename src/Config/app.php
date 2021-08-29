@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'providers' => [
-        Kwaadpepper\ResponsiveFileManager\FileManagerServiceProvider::class
-    ],
+ 
     'aliases' => [
         'PhareSpase' => \App\Lib\PhareSpase::class,
         'MenuApp' => \App\Lib\ModulApp::class,
