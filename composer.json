@@ -1,0 +1,37 @@
+{
+    "name": "ismarianto/coreaplikasi",
+    "description": "Make it easier for programmers if there is a migration to laravel version above or downgrade apps",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "version": "1",
+    "authors": [
+        {
+            "name": "ismarianto",
+            "email": "ismarianto97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ismarianto\\Ismarianto\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ismarianto\\Ismarianto\\IsmariantoServiceProvider"
+            ]
+        }
+    }
+}
