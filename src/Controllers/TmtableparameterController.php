@@ -24,7 +24,7 @@ class TmtableparameterController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::table_doc.';
+        $this->view    = 'ismarianto::table_doc.';
         $this->route   = 'modulapp.';
     }
 
@@ -40,7 +40,7 @@ class TmtableparameterController extends Controller
         return view(
             $this->view,
             [
-                'title' => 'Sub Modul tazamcore',
+                'title' => 'Sub Modul ismarianto',
                 'jenis_hadiah' => $hadiah,
                 'catdoc' => $catdoc
             ]
@@ -128,7 +128,7 @@ class TmtableparameterController extends Controller
 
         $f = Tmmodul::findOrFail($id);
         // dd($f);
-        return view('tazamcore::submodulapp.form_edit', [
+        return view('ismarianto::submodulapp.form_edit', [
             'title' => 'Tambah Menu',
             'id' => $f->id,
             'id_parent' => $f->id_parent,

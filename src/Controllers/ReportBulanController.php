@@ -20,7 +20,7 @@ class ReportBulanController extends AbangJeckController
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::report_bulanan.';
+        $this->view    = 'ismarianto::report_bulanan.';
         $this->route   = 'report_bulanan.';
     }
 

@@ -28,7 +28,7 @@ class TmparameterController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::tmparameter.';
+        $this->view    = 'ismarianto::tmparameter.';
         $this->route   = 'parameter.';
         $this->primary_id = PhareSpase::createtazamid();
     }
@@ -188,7 +188,7 @@ class TmparameterController extends Controller
                 ->where('category', '=', $category)
                 ->where('tmhadiah_id', '=',  $tmhadiah_id)->get();
         }
-        return view('tazamcore::table_doc.index', [
+        return view('ismarianto::table_doc.index', [
             'doc' => $doc,
             'category' => $category,
             'fkode' => $fkode,
@@ -436,11 +436,11 @@ class TmparameterController extends Controller
         if ($this->request->json()) {
             $jumlahdata = $this->request->jumlah_rekening;
             if ($id != '') {
-                return view('tazamcore::tmparameter.kode_rek_jumlah', [
+                return view('ismarianto::tmparameter.kode_rek_jumlah', [
                     'jumlah_data' => $jumlahdata
                 ]);
             } else {
-                return view('tazamcore::tmparameter.kode_rek_jumlah', [
+                return view('ismarianto::tmparameter.kode_rek_jumlah', [
                     'jumlah_data' => $jumlahdata
                 ]);
             }

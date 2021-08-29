@@ -20,7 +20,7 @@ class ModulappController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::modulapp.';
+        $this->view    = 'ismarianto::modulapp.';
         $this->route   = 'modulapp.';
     }
 
@@ -29,9 +29,9 @@ class ModulappController extends Controller
         $level = Tmlevelakses::get();
 
         return view(
-            'tazamcore::modulapp.index',
+            'ismarianto::modulapp.index',
             [
-                'title' => 'Modul tazamcore',
+                'title' => 'Modul ismarianto',
                 'level' => $level
             ]
         );
@@ -71,7 +71,7 @@ class ModulappController extends Controller
         $fonts = PhareSpase::fontawesome();
         $level = Tmlevelakses::get();
 
-        return view('tazamcore::modulapp.form_add', [
+        return view('ismarianto::modulapp.form_add', [
             'title' => 'Tambah Menu',
             'font' => $fonts,
             'level' => $level
@@ -119,7 +119,7 @@ class ModulappController extends Controller
         $level = Tmlevelakses::get();
 
         // dd($f->level);
-        return view('tazamcore::modulapp.form_edit', [
+        return view('ismarianto::modulapp.form_edit', [
             'title' => 'Tambah Menu',
             'id' => $f->id,
             'id_parent' => $f->id_parent,

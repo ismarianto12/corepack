@@ -19,7 +19,7 @@ trait Overide
 {
     public function cekoveride($no_aplikasi)
     {
-        // dapatkan siapa yang overide di tazamcore 
+        // dapatkan siapa yang overide di ismarianto 
         $nasabah = Tmnasabah::select(
             'tmnasabah.no_aplikasi',
             'tmaplikasi.tmhadiah_id',

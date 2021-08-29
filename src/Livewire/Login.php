@@ -18,7 +18,7 @@ class Login extends Component
 
     public function render()
     {
-        return view('tazamcore::livewire.render_login')->layout('tazamcore::layouts.login');
+        return view('ismarianto::livewire.render_login')->layout('ismarianto::layouts.login');
     }
     public function updated($propertyName)
     {

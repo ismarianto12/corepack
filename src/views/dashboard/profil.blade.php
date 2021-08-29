@@ -1,4 +1,4 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
     {{-- pending case --}}

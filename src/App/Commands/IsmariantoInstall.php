@@ -11,7 +11,7 @@ class IsmariantoInstall extends Command
      *
      * @var string
      */
-    protected $signature = 'tazamcore:install';
+    protected $signature = 'ismarianto:install';
 
     /**
      * The console command description.
@@ -37,7 +37,7 @@ class IsmariantoInstall extends Command
      */
     public function handle()
     {
-        $this->info('***** menginstall aplikasi TABUNGAN ZAM ZAM V.1 - PANIN DUBAI SYARIAH...');
+        $this->info('***** Install core aplikasi...');
         $this->call('vendor:publish', [
             '--provider' => "Ismarianto\Ismarianto\IsmariantoServiceProvider",
             '--force' => 'yes'

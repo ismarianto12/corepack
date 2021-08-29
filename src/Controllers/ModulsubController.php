@@ -23,7 +23,7 @@ class ModulsubController extends Controller
             redirect()->route('404');
         }
         $this->request = $request;
-        $this->view    = 'tazamcore::modulapp.';
+        $this->view    = 'ismarianto::modulapp.';
         $this->route   = 'modulapp.';
     }
 
@@ -33,8 +33,8 @@ class ModulsubController extends Controller
 
         $level = Tmlevelakses::get();
         return view(
-            'tazamcore::submodulapp.index',
-            ['title' => 'Sub Modul tazamcore', 'level' => $level]
+            'ismarianto::submodulapp.index',
+            ['title' => 'Sub Modul ismarianto', 'level' => $level]
         );
     }
 
@@ -81,7 +81,7 @@ class ModulsubController extends Controller
         $parent = Tmmodul::where('id_parent', '=', 0)->get();
         $level = Tmlevelakses::get();
 
-        return view('tazamcore::submodulapp.form_add', [
+        return view('ismarianto::submodulapp.form_add', [
             'title' => 'Tambah Menu',
             'level' => $level,
             'parent' => $parent,
@@ -127,7 +127,7 @@ class ModulsubController extends Controller
         $level = Tmlevelakses::get();
         $f = Tmmodul::findOrFail($id);
         // dd($f);
-        return view('tazamcore::submodulapp.form_edit', [
+        return view('ismarianto::submodulapp.form_edit', [
             'title' => 'Tambah Menu',
             'id' => $f->id,
             'id_parent' => $f->id_parent,

@@ -11,16 +11,16 @@
        <link href="{{ pkg_asset('dash', 'dependencies/bootstrap/css/bootstrap-4.5.0.min.css') }}" rel="stylesheet">
        <link href="{{ pkg_asset('dash', 'dependencies/Font-Awesome/css/all.css') }}" rel="stylesheet" type="text/css">
        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-       <link href="{{ pkg_asset('tazamcore', 'assets/css/style.css') }}" rel="stylesheet">
+       <link href="{{ pkg_asset('ismarianto', 'assets/css/style.css') }}" rel="stylesheet">
        <link href="{{ pkg_asset('dash', 'dependencies/stisla/css/components.css') }}" rel="stylesheet">
        <link href="{{ pkg_asset('dash', 'css/custom.css') }}" rel="stylesheet">
-       <link href="{{ pkg_asset('tazamcore', 'assets/css/jquery-confirm.min.css') }}" rel="stylesheet">
+       <link href="{{ pkg_asset('ismarianto', 'assets/css/jquery-confirm.min.css') }}" rel="stylesheet">
        <script src="{{ pkg_asset('dash', 'dependencies/jquery/jquery-3.5.1.min.js') }}"></script>
 
        <script src="{{ pkg_asset('dash', 'dependencies/stisla/js/scripts.js') }}"></script>
 
-       <link href="{{ pkg_asset('tazamcore', 'assets/plugin/select2/css/select2.min.css') }}" rel="stylesheet">
-       <script src="{{ pkg_asset('tazamcore', 'assets/js/aplikasi.js') }}"></script>
+       <link href="{{ pkg_asset('ismarianto', 'assets/plugin/select2/css/select2.min.css') }}" rel="stylesheet">
+       <script src="{{ pkg_asset('ismarianto', 'assets/js/aplikasi.js') }}"></script>
 
 
        <script type="text/javascript">
@@ -30,10 +30,10 @@
                }
            });
        </script>
-       <link rel="stylesheet" type="text/css" href="{{ pkg_asset('tazamcore', 'assets/css/tooltipster.css') }}" />
-       <script src="{{ pkg_asset('tazamcore', 'assets/js/jquery.tooltipster.min.js') }}">
+       <link rel="stylesheet" type="text/css" href="{{ pkg_asset('ismarianto', 'assets/css/tooltipster.css') }}" />
+       <script src="{{ pkg_asset('ismarianto', 'assets/js/jquery.tooltipster.min.js') }}">
        </script>
-       <link href="{{ pkg_asset('tazamcore', 'assets/css') }}/red/pace-theme-flash.css" rel="stylesheet" />
+       <link href="{{ pkg_asset('ismarianto', 'assets/css') }}/red/pace-theme-flash.css" rel="stylesheet" />
        @yield('head')
    </head>
 
@@ -205,7 +205,7 @@
                    <aside id="sidebar-wrapper">
                        <div class="sidebar-brand">
                            <a href="index.html">
-                               <img src="{{ pkg_asset('tazamcore', 'assets/img/logo_pbs.png') }}" alt="logo"
+                               <img src="{{ pkg_asset('ismarianto', 'assets/img/logo_pbs.png') }}" alt="logo"
                                    width="200">
                        </div>
                        <div class="sidebar-brand sidebar-brand-sm">
@@ -229,7 +229,7 @@
                <!-- Main Content -->
                <div class="main-content">
                    <section class="section">
-                       @include('tazamcore::layouts.breadcrumb', ['titledash' => $title])
+                       @include('ismarianto::layouts.breadcrumb', ['titledash' => $title])
                        {{-- @include('dash::components.messages') --}}
                        <div class="section-body">
                            @yield('content')
@@ -271,16 +271,16 @@
 
        @yield('script')
 
-       <script src="{{ pkg_asset('tazamcore', 'assets/plugin/select2/js/select2.min.js') }}"></script>
+       <script src="{{ pkg_asset('ismarianto', 'assets/plugin/select2/js/select2.min.js') }}"></script>
 
-       <script src="{{ pkg_asset('tazamcore', 'assets/js/jquery-confirm.min.js') }}"></script>
+       <script src="{{ pkg_asset('ismarianto', 'assets/js/jquery-confirm.min.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'dependencies/popper/popper-2.4.0.min.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'dependencies/bootstrap/js/bootstrap-4.5.0.min.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'js/focus-menu.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'dependencies/stisla/js/jquery.nicescroll.min.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'dependencies/stisla/js/moment.min.js') }}"></script>
        <script src="{{ pkg_asset('dash', 'dependencies/stisla/js/stisla.js') }}"></script>
-       <script src="{{ pkg_asset('tazamcore', 'assets') }}/js/pace.js"></script>
+       <script src="{{ pkg_asset('ismarianto', 'assets') }}/js/pace.js"></script>
        {{-- otorisasi
        verifikasi
        jumlah --}}

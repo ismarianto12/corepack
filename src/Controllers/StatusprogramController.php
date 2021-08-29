@@ -37,7 +37,7 @@ class StatusprogramController extends controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::status_program.';
+        $this->view    = 'ismarianto::status_program.';
         $this->route   = 'status_program.';
     }
 

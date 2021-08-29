@@ -58,7 +58,7 @@ class Tmparamtertr
         $jmanfaat = Trpenerima_manfaat::where('no_aplikasi', $data->no_aplikasi)
             ->count();
 
-        return view('tazamcore::tmparameter.get_detail_nasabah', [
+        return view('ismarianto::tmparameter.get_detail_nasabah', [
             'data' => $data,
             'jmanfaat' => $jmanfaat,
             'tmparametername' => $data->nama_prog,
@@ -70,7 +70,7 @@ class Tmparamtertr
     {
 
         $data = Truseroveride::get();
-        return view('tazamcore::tmparameter.get_overide', [
+        return view('ismarianto::tmparameter.get_overide', [
             'data' => $data,
             'name' => $name,
             'parclass' => $parclass
@@ -80,7 +80,7 @@ class Tmparamtertr
     public static function getlevel($parclasss = null)
     {
         $data = Truseroveride::get();
-        return view('tazamcore::tmparameter.level_akses', [
+        return view('ismarianto::tmparameter.level_akses', [
             'data' => $data,
             'name' => $parclasss
         ]);
@@ -93,7 +93,7 @@ class Tmparamtertr
             $gparameter = 'doc_pmanfaat_id';
         }
         $data = Tmparameterdoc::where('kode', $parameter)->get();
-        return view('tazamcore::tmparameter.pilihan_document_peserta', [
+        return view('ismarianto::tmparameter.pilihan_document_peserta', [
             'tmparater_doc' => $data,
             'name' => $gparameter
         ]);

@@ -37,7 +37,7 @@ class UploadkelengkapanController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::tmkelengkapan.';
+        $this->view    = 'ismarianto::tmkelengkapan.';
         $this->route   = 'parameter.';
         $this->primary_id = PhareSpase::createtazamid();
     }

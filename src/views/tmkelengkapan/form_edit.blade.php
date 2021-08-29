@@ -1,8 +1,8 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
 
-    @include('tazamcore::tmparameter.css')
+    @include('ismarianto::tmparameter.css')
 
     <div class="row">
         <div class="col-12">
@@ -43,16 +43,16 @@
                             <div id="myTabContent" class="tab-content">
                                 <div id="uploaddocument" role="tabpanel" aria-labelledby="uploaddocument-tab"
                                     class="tab-pane fade px-4 py-5 show active">
-                                    @include('tazamcore::tmkelengkapan.form_kelengkapan_part')
+                                    @include('ismarianto::tmkelengkapan.form_kelengkapan_part')
                                 </div>
                                 <div id="kelengkapan" role="tabpanel" aria-labelledby="kelengkapan-tab"
                                     class="tab-pane fade px-4 py-5">
-                                    @include('tazamcore::tmkelengkapan.detailnasabah')
+                                    @include('ismarianto::tmkelengkapan.detailnasabah')
 
                                 </div>
                                 <div id="kelengkapan_pmanfaat" role="kelengkapan_pmanfaat"
                                     aria-labelledby="kelengkapan_pmanfaat-tab" class="tab-pane fade px-4 py-5">
-                                    @include('tazamcore::tmkelengkapan.detailnasabah_manfaat')
+                                    @include('ismarianto::tmkelengkapan.detailnasabah_manfaat')
 
                                 </div>
                                 <div class="form-group">

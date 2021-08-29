@@ -1,4 +1,4 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
 
@@ -186,7 +186,7 @@
                 '</div>');
 
         });
-        @include('tazamcore::layouts.tablechecked');
+        @include('ismarianto::layouts.tablechecked');
 
         // addd
     </script>

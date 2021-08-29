@@ -37,7 +37,7 @@ class KelengkapanjaminanController extends controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::datajaminan.';
+        $this->view    = 'ismarianto::datajaminan.';
         $this->route   = 'datajaminan.';
         $this->primary_id = PhareSpase::createtazamid();
     }
@@ -245,7 +245,7 @@ class KelengkapanjaminanController extends controller
 
         // dd($parsed_data);
         $level = Tmparamtertr::session('role');
-        $view_parsing = 'tazamcore::verifikasi_kelengkapan.form_edit';
+        $view_parsing = 'ismarianto::verifikasi_kelengkapan.form_edit';
         return view($view_parsing, [
             'id' => $nasabah->id,
             'no_aplikasi' => $nasabah->no_aplikasi,
@@ -337,7 +337,7 @@ class KelengkapanjaminanController extends controller
                 'tmupload_jaminan.tmparameter_id',
                 'left'
             )->get();
-        return view('tazamcore::datajaminan.table_upload', [
+        return view('ismarianto::datajaminan.table_upload', [
             'document' => $document,
             'nasabah' => $nasabah
         ]);

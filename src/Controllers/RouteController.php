@@ -21,7 +21,7 @@ class RouteController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::error_handle.';
+        $this->view    = 'ismarianto::error_handle.';
         $this->route   = 'parameter.';
         $this->primary_id = PhareSpase::createtazamid();
     }

@@ -28,7 +28,7 @@ class TrhubunganController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::trhubungan.';
+        $this->view    = 'ismarianto::trhubungan.';
         $this->route   = 'trhubungan.';
         $this->primary_id = PhareSpase::createtazamid();
     }

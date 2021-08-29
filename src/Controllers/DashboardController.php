@@ -38,14 +38,14 @@ class DashboardController extends Controller
 
     public function index(Request $request)
     {
-        return view('tazamcore::dashboard.index', [
+        return view('ismarianto::dashboard.index', [
             'title' => 'welcome dashboard'
         ]);
     }
 
     public function profil()
     {
-        return view('tazamcore::dashboard.profil', [
+        return view('ismarianto::dashboard.profil', [
             'title' => "Ganti Password"
         ]);
     }

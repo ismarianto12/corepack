@@ -1,4 +1,4 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
 
@@ -144,7 +144,7 @@
             });
         });
 
-        @include('tazamcore::layouts.tablechecked');
+        @include('ismarianto::layouts.tablechecked');
 
         function del() {
             var c = new Array();
@@ -210,7 +210,7 @@
                 id = $(this).data('id');
                 addUrl = '{{ route('nasabah.edit', ':id') }}'.replace(':id', id);
                 $('#form_content').html(
-                    '<center><img src="{{ pkg_asset('tazamcore', 'assets/img/loading.gif') }}" class="img-responsive"></center>'
+                    '<center><img src="{{ pkg_asset('ismarianto', 'assets/img/loading.gif') }}" class="img-responsive"></center>'
                 ).load(addUrl);
 
             })

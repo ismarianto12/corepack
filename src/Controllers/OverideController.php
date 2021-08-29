@@ -39,7 +39,7 @@ class OverideController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view = 'tazamcore::.overide.';
+        $this->view = 'ismarianto::.overide.';
         $this->route = 'nasabah.';
     }
     /**

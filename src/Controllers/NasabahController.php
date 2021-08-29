@@ -43,7 +43,7 @@ class NasabahController extends Controller
     {
 
         $this->request = $request;
-        $this->view = 'tazamcore::.nasabah.';
+        $this->view = 'ismarianto::.nasabah.';
         $this->route = 'nasabah.';
     }
 
@@ -496,7 +496,7 @@ class NasabahController extends Controller
                 $hasdata['alamat'][$j] = $hasdatas['alamat'];
                 $j++;
             }
-            return view('tazamcore::nasabah.jum_penerima_manfaat', [
+            return view('ismarianto::nasabah.jum_penerima_manfaat', [
                 'data_penerima_manfaat' => $data_penerima_manfaat,
                 'passed' => $passed,
                 'tmhadiah' => $hadiah,
@@ -561,7 +561,7 @@ class NasabahController extends Controller
                 $j++;
             }
             $fhasdata = isset($hasdata) ? $hasdata : [];
-            return view('tazamcore::nasabah.jum_penerima_manfaat_edit', [
+            return view('ismarianto::nasabah.jum_penerima_manfaat_edit', [
                 'tmhadiah' => $hadiah,
                 'hubungan' => $hubungan,
                 'data_penerima_manfaat' => $loopingdata,

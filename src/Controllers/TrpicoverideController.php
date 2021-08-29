@@ -29,7 +29,7 @@ class TrpicoverideController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::trpicoveride.';
+        $this->view    = 'ismarianto::trpicoveride.';
         $this->route   = 'trpicoveride.';
     }
 

@@ -40,7 +40,7 @@ class VerifikasiController extends controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::datajaminan.';
+        $this->view    = 'ismarianto::datajaminan.';
         $this->route   = 'datajaminan.';
         $this->primary_id = PhareSpase::createtazamid();
     }
@@ -49,7 +49,7 @@ class VerifikasiController extends controller
         $title = 'Verifikasi document jamiman';
 
         $parsed =  'veryfied';
-        $view = 'tazamcore::verifikasi_kelengkapan.index';
+        $view = 'ismarianto::verifikasi_kelengkapan.index';
         return view(
             $view,
             [
@@ -242,7 +242,7 @@ class VerifikasiController extends controller
 
         $approve_status = Trstatus_otorisasi::where('no_aplikasi', $no_apl)->first();
         $level = Tmparamtertr::session('role');
-        $view_parsing = 'tazamcore::verifikasi_kelengkapan.form_edit';
+        $view_parsing = 'ismarianto::verifikasi_kelengkapan.form_edit';
 
         $trstatus_otorisasi = Trstatus_otorisasi::where([
             'no_aplikasi' => $no_apl,

@@ -2,6 +2,6 @@
 // return class theme name
 return [
     'theme' => [
-        'main' => 'tazamcore'
+        'main' => 'ismarianto'
     ]
 ];

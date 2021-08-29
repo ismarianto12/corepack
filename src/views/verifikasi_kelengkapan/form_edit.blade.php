@@ -1,4 +1,4 @@
-@include('tazamcore::tmparameter.css')
+@include('ismarianto::tmparameter.css')
 <div class="row">
     <div class="col-12">
         <div class="container">
@@ -34,15 +34,15 @@
             <div id="myTabContent" class="tab-content">
                 <div id="uploaddocument" role="tabpanel" aria-labelledby="uploaddocument-tab"
                     class="tab-pane fade px-4 py-5 show active">
-                    @include('tazamcore::verifikasi_kelengkapan.form_kelengkapan_part')
+                    @include('ismarianto::verifikasi_kelengkapan.form_kelengkapan_part')
                 </div>
                 <div id="kelengkapan" role="tabpanel" aria-labelledby="kelengkapan-tab" class="tab-pane fade px-4 py-5">
-                    @include('tazamcore::verifikasi_kelengkapan.detailnasabah')
+                    @include('ismarianto::verifikasi_kelengkapan.detailnasabah')
 
                 </div>
                 <div id="kelengkapan_pmanfaat" role="tabpanel" aria-labelledby="kelengkapan_pmanfaat-tab"
                     class="tab-pane fade px-4 py-5">
-                    @include('tazamcore::verifikasi_kelengkapan.detailnasabah_manfaat')
+                    @include('ismarianto::verifikasi_kelengkapan.detailnasabah_manfaat')
 
                 </div>
 

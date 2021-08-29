@@ -1,4 +1,4 @@
-@include('tazamcore::tmparameter.css')
+@include('ismarianto::tmparameter.css')
 
 <div class="row">
     <div class="col-12">
@@ -39,7 +39,7 @@
             </ul>
 
             <section class="section">
-                @include('tazamcore::tmparameter.edit_form_part')
+                @include('ismarianto::tmparameter.edit_form_part')
             </section>
 
 

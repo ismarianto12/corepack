@@ -1,4 +1,4 @@
-@include('tazamcore::tmparameter.css')
+@include('ismarianto::tmparameter.css')
 
 <div class="row">
     <div class="col-12">
@@ -37,7 +37,7 @@
         </ul>
 
         <section class="section">
-            @include('tazamcore::tmparameter.add_form_part')
+            @include('ismarianto::tmparameter.add_form_part')
         </section>
     </div>
     <!-- End rounded tabs -->

@@ -17,10 +17,10 @@ class IsmariantoServiceProvider extends ServiceProvider
     public function boot(Router $router)
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        $this->loadViewsFrom(__DIR__ . '/views', 'tazamcore');
+        $this->loadViewsFrom(__DIR__ . '/views', 'ismarianto');
         $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
         $this->publishes([
-            __DIR__ . '/public/assets' => public_path('vendor/ismarianto/tazamcore/assets'),
+            __DIR__ . '/public/assets' => public_path('vendor/ismarianto/ismarianto/assets'),
         ]);
         $this->publishes([
             __DIR__ . '/public/uploads/files' => public_path('uploads/files', 'uploads'),

@@ -1,9 +1,9 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
 
 
-    @include('tazamcore::tmparameter.css')
+    @include('ismarianto::tmparameter.css')
     <section class="section">
         <div class="card">
             <div class="col-12">
@@ -15,7 +15,7 @@
                     {!! Tmparamtertr::get_detailnasabah($no_aplikasi) !!}
                     <br />
                     <hr />
-                    @include('tazamcore::datajaminan.form_kelengkapan_part')
+                    @include('ismarianto::datajaminan.form_kelengkapan_part')
                 </div>
             </div>
         </div>

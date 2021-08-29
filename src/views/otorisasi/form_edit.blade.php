@@ -1,10 +1,10 @@
-@include('tazamcore::tmparameter.css')
+@include('ismarianto::tmparameter.css')
 
 <section class="section">
     <div class="row">
         <div class="col-12">
             <br />
-            @include('tazamcore::otorisasi.form_kelengkapan_part')
+            @include('ismarianto::otorisasi.form_kelengkapan_part')
         </div>
     </div>
 </section>

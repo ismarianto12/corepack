@@ -603,7 +603,7 @@
 
          $(".select2").select2();
 
-         @include('tazamcore::layouts.tablechecked');
+         @include('ismarianto::layouts.tablechecked');
 
          $('#table_penutupan_program').html('<center><h3>Loading Form Harap Bersabar ...</h3></center>').load(
              '{{ route('tablebiaya_list') }}');

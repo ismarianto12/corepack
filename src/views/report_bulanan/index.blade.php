@@ -1,4 +1,4 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
     {{-- @dd($month) --}}
@@ -201,7 +201,7 @@
                 '</div>');
 
         });
-        @include('tazamcore::layouts.tablechecked');
+        @include('ismarianto::layouts.tablechecked');
 
         // addd
     </script>

@@ -24,7 +24,7 @@
 </head>
 
 <body style="
-background: url('{{ pkg_asset('tazamcore', 'assets/img/background.jpg') }}');
+background: url('{{ pkg_asset('ismarianto', 'assets/img/background.jpg') }}');
 background-size: cover;
 ">
     <div id="app">
@@ -37,7 +37,7 @@ background-size: cover;
                                 <div class="card card-primary">
                                     <div class="card-body">
                                         <div class="login-brand">
-                                            <img src="{{ pkg_asset('tazamcore', 'assets/img/logo_pbs.png') }}"
+                                            <img src="{{ pkg_asset('ismarianto', 'assets/img/logo_pbs.png') }}"
                                                 alt="logo" width="200">
                                         </div>
                                         <form id="login" method="POST" class="needs-validation" novalidate="">

@@ -28,7 +28,7 @@ class Tmparameter_docController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::tmparameterdoc.';
+        $this->view    = 'ismarianto::tmparameterdoc.';
         $this->route   = 'parameter_doc.';
     }
 
@@ -171,11 +171,11 @@ class Tmparameter_docController extends Controller
         if ($this->request->json()) {
             $jumlahdata = $this->request->jumlah_rekening;
             if ($id != '') {
-                return view('tazamcore::tmparameter.kode_rek_jumlah', [
+                return view('ismarianto::tmparameter.kode_rek_jumlah', [
                     'jumlah_data' => $jumlahdata
                 ]);
             } else {
-                return view('tazamcore::tmparameter.kode_rek_jumlah', [
+                return view('ismarianto::tmparameter.kode_rek_jumlah', [
                     'jumlah_data' => $jumlahdata
                 ]);
             }

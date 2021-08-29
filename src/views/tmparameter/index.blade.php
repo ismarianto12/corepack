@@ -1,4 +1,4 @@
-@extends('tazamcore::layouts.template')
+@extends('ismarianto::layouts.template')
 
 @section('content')
     <div class="row">
@@ -143,7 +143,7 @@
             ]
 
         });
-        @include('tazamcore::layouts.tablechecked');
+        @include('ismarianto::layouts.tablechecked');
         // addd
         $(function() {
             $('#add_data').on('click', function() {

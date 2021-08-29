@@ -43,7 +43,7 @@ class OtorisasiController extends Controller
     {
 
         $this->request = $request;
-        $this->view = 'tazamcore::.otorisasi.';
+        $this->view = 'ismarianto::.otorisasi.';
         $this->route = 'otorisasi.';
     }
     /**

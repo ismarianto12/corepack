@@ -24,7 +24,7 @@ class TrtablebiayaController extends Controller
     function __construct(Request $request)
     {
         $this->request = $request;
-        $this->view    = 'tazamcore::trtablebiaya.';
+        $this->view    = 'ismarianto::trtablebiaya.';
         $this->route   = 'tablebiaya.';
     }
 
