@@ -39,6 +39,12 @@ class IsmariantoServiceProvider extends ServiceProvider
         $loader->alias('Tmparamtertr', Tmparamtertr::class);
         $loader->alias('MenuApp', ModulApp::class);
         $loader->alias('PhareSpase', PhareSpase::class);
+        
+        //  untuk mengambil helper atau direktori yang akan di publish
+        $helper = __DIR__ . '/App/Lib/helper.php';
+        if (file_exists($helper)) {
+            require_once($helper);
+        }
 
         $this->mergeConfigFrom(__DIR__ . '/Config/main.php', 'core');
     }
